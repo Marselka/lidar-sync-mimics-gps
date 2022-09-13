@@ -1,6 +1,6 @@
-# [Open-Source LiDAR Time Synchronization System by Mimicking GPS-clock](https://arxiv.org/abs/2107.02625)<sup>1</sup>
+# [Open-Source LiDAR Time Synchronization System by Mimicking GNSS-clock](https://arxiv.org/abs/2107.02625)<sup>1</sup>
 
-___The LiDAR-to-IMU time synchronized system mimicing a GPS-supplied clock interface by a microcontroller-powered platform that provides 1 microsecond synchronization precision.___
+___The LiDAR-to-IMU time synchronized system mimicing a GNSS-supplied clock interface by a microcontroller-powered platform that provides 1 microsecond synchronization precision.___
 
 <p align="center">
   <img src="https://github.com/MobileRoboticsSkoltech/lidar-sync-mimics-gps/blob/main/block_scheme.png">
@@ -43,7 +43,7 @@ IMU0 identifier for compatibility with other projects
 
 ## Software
 The software consists of ROS drivers for handling Lidar and IMU data and precise timestamping.
-Lidar ROS driver is based on common ROS package with our patch for hardware timestamping by mimicking GPS-clock.  
+Lidar ROS driver is based on common ROS package with our patch for hardware timestamping by mimicking GNSS-clock.  
 IMU ROS driver is developed from scratch and produces [sensor_msgs/Imu](http://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/Imu.html) messages.
 
 ## In case of questions
@@ -98,7 +98,7 @@ Googling of _schmitt inverter_, _74HC14_ can help.
 
 ```
 @misc{faizullin2021opensource,
-  title={Open-Source LiDAR Time Synchronization System by Mimicking GPS-clock}, 
+  title={Open-Source LiDAR Time Synchronization System by Mimicking GNSS-clock}, 
   author={Marsel Faizullin and Anastasiia Kornilova and Gonzalo Ferrer},
   year={2021},
   eprint={2107.02625},
