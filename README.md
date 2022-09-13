@@ -64,7 +64,7 @@ IMU ROS driver is developed from scratch and produces [sensor_msgs/Imu](http://d
   <tr> <td>PC9</td> <td>GPIO_EXTI9</td> <td>Interrupt input pin from IMU module. IMU triggers this pin when new data sample is ready</td> </tr>
   <tr> <td>PC10</td> <td>UART4_TX</td> <td>UART Transmit line to PC through UART-to-USB stick</td> </tr>
   <tr> <td>PC11</td> <td>UART4_RX</td> <td>UART Receive line from PC through UART-to-USB stick, not used</td> </tr>
-  <tr> <td>PC12</td> <td>UART5_TX</td> <td>UART Transmit MCU clock line to Lidar through signal inverter (see [note]() below)</td> </tr>
+  <tr> <td>PC12</td> <td>UART5_TX</td> <td>UART Transmit MCU clock line to Lidar through signal inverter (see <a href="#note-about-mcu-to-lidar-data-signal-inverter">note</a> below)</td> </tr>
   <tr> <td>PD2</td> <td>UART5_RX</td> <td>UART Receive line from Lidar, not used</td> </tr>
 </table>
 
