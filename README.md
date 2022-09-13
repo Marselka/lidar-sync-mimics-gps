@@ -70,6 +70,12 @@ IMU ROS driver is developed from scratch and produces [sensor_msgs/Imu](http://d
 
 TIM5 (RTC) and TIM1(PPS signal generator, NMEA message transmission trigger) now share three tasks explained in the article. For optimization, only single timer can be utilized for all this tasks. However, to keep compatibility with current uasge of the firmware in ongoing projects, we do not plan to update it.
 
+Wiring result schematically should look as shown in the figure:
+
+<p align="center">
+  <img src="connection_diagram.png">
+</p>
+
 ## Note about MCU to Lidar data signal inverter
 Page 43 of section 7.4.3 Timing and Polarity Requirements [VLP-16 User Manual](https://velodynelidar.com/wp-content/uploads/2019/12/63-9243-Rev-E-VLP-16-User-Manual.pdf) states the following:
 
