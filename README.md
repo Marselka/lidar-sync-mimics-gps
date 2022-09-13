@@ -3,7 +3,7 @@
 ___The LiDAR-to-IMU time synchronized system mimicing a GNSS-supplied clock interface by a microcontroller-powered platform that provides 1 microsecond synchronization precision.___
 
 <p align="center">
-  <img src="https://github.com/MobileRoboticsSkoltech/lidar-sync-mimics-gps/blob/main/block_scheme.png">
+  <img src="block_scheme.png">
 </p>
 
 To clone the repository with proper submodules utilize `--recurse-submodules` argument:  
