@@ -46,9 +46,6 @@ The software consists of ROS drivers for handling Lidar and IMU data and precise
 Lidar ROS driver is based on common ROS package with our patch for hardware timestamping by mimicking GNSS-clock.  
 IMU ROS driver is developed from scratch and produces [sensor_msgs/Imu](http://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/Imu.html) messages.
 
-## In case of questions
-Any question — raise an issue, please.
-
 ## Wiring
 
 <table>
@@ -64,11 +61,11 @@ Any question — raise an issue, please.
   <tr> <td>PD13</td> <td>GPIO_OUT</td> <td>Debugging LED. Toggling in the main loop (`while`)</td> </tr>
   <tr> <td>PD14</td> <td>GPIO_OUT</td> <td>Debugging LED. Not used</td> </tr>
   <tr> <td>PD15</td> <td>GPIO_OUT</td> <td>Debugging LED. Not used</td> </tr>
-  <tr> <td>PC9</td> <td>GPIO_EXTI9</td> <td>Interrupt input pin from IMU module. IMU trigger this pin when new data sample is ready</td> </tr>
+  <tr> <td>PC9</td> <td>GPIO_EXTI9</td> <td>Interrupt input pin from IMU module. IMU triggers this pin when new data sample is ready</td> </tr>
   <tr> <td>PC10</td> <td>UART4_TX</td> <td>UART Transmit line to PC through UART-to-USB stick</td> </tr>
   <tr> <td>PC11</td> <td>UART4_RX</td> <td>UART Receive line from PC through UART-to-USB stick, not used</td> </tr>
-  <tr> <td>PC12</td> <td>UART5_RX</td> <td>UART Receive line from Lidar, not used</td> </tr>
-  <tr> <td>PD2</td> <td>UART5_TX</td> <td>UART Transmit MCU clock line to Lidar through signal inverter (see note below)</td> </tr>
+  <tr> <td>PC12</td> <td>UART5_TX</td> <td>UART Transmit MCU clock line to Lidar through signal inverter (see [note]() below)</td> </tr>
+  <tr> <td>PD2</td> <td>UART5_RX</td> <td>UART Receive line from Lidar, not used</td> </tr>
 </table>
 
 TIM5 (RTC) and TIM1(PPS signal generator, NMEA message transmission trigger) now share three tasks explained in the article. For optimization, only single timer can be utilized for all this tasks. However, to keep compatibility with current uasge of the firmware in ongoing projects, we do not plan to update it.
@@ -91,8 +88,8 @@ LOW---- ───┘         └────┘       └──────     
 Single Schmitt-trigger inverter [SN74LVC1G14](https://www.ti.com/product/SN74LVC1G14) is a good choice for that purpose, we used it in a [board](https://www.chipdip.ru/product/rdc2-0015a).  
 Googling of _schmitt inverter_, _74HC14_ can help.
 
-## WIP
-- adding connecting diagram
+## In case of questions
+Any question — raise an issue, please.
 
 <sup>1</sup> :
 
