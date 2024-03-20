@@ -8,7 +8,7 @@ ___The LiDAR-to-IMU time synchronized system mimicing a GNSS-supplied clock inte
 
 To clone the repository with proper submodules utilize `--recurse-submodules` argument:  
 
-`git clone --recurse-submodules https://github.com/MobileRoboticsSkoltech/lidar-sync-mimics-gps.git`
+`git clone --recurse-submodules https://github.com/Marselka/lidar-sync-mimics-gps.git`
 
 ## System requirements
 The project was tested using:
