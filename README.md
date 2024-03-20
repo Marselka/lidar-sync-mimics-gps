@@ -30,7 +30,7 @@ The STM32 MCU-platform is chosen as it meets all the requirements described in t
 
 ## Firmware
 The MCU firmware aimed on IMU-data gathering and LiDAR-to-IMU time synchronization. It is designed using STM32CubeIDE for Linux. 
-The main source code is placed in [main.c](https://github.com/MobileRoboticsSkoltech/lidar-sync-mimics-gps/blob/main/firmware/Core/Src/main.c) while the other setups are stored in [firmware.ioc](https://github.com/MobileRoboticsSkoltech/lidar-sync-mimics-gps/blob/main/firmware/firmware.ioc) and setup through the IDE GUI. It means there is no need to edit other source files except two mentioned.
+The main source code is placed in [main.c](https://github.com/Marselka/lidar-sync-mimics-gps/blob/main/firmware/Core/Src/main.c) while the other setups are stored in [firmware.ioc](https://github.com/Marselka/lidar-sync-mimics-gps/blob/main/firmware/firmware.ioc) and setup through the IDE GUI. It means there is no need to edit other source files except two mentioned.
 
 ## IMU data format
 The MCU outputs IMU data as are plain ASCII strings that can be used independently on ROS and may be parsed by another data recording/processing API. These strings contain timestamp (minutes, seconds, subseconds (1/25600000 of second) and IMU data (3D-angular velocity, temperature, 3D-acceleration) with format:  
